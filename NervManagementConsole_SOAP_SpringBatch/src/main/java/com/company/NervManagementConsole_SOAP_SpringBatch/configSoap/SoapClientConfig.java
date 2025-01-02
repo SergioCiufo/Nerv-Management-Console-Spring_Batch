@@ -1,4 +1,4 @@
-package com.company.NervManagementConsole_SOAP_SpringBatch.config;
+package com.company.NervManagementConsole_SOAP_SpringBatch.configSoap;
 
 import javax.xml.ws.BindingProvider;
 
@@ -9,6 +9,7 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
 import com.company.NervManagementConsoleSOAP_SpringBatch.generated.MissionEventServiceSoap;
 import com.company.NervManagementConsoleSOAP_SpringBatch.generated.MissionEventServiceSoapService;
+import com.company.NervManagementConsole_SOAP_SpringBatch.serviceSoap.SoapClient;
 
 
 @Configuration

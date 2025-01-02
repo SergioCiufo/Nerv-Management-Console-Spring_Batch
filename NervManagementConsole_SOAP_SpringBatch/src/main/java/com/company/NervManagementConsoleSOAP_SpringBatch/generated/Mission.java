@@ -22,6 +22,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="participantsMax" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="eventMission" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="available" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="releaseDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -37,7 +38,8 @@ import javax.xml.bind.annotation.XmlType;
     "image",
     "participantsMax",
     "eventMission",
-    "available"
+    "available",
+    "releaseDate"
 })
 public class Mission
     extends Activity
@@ -49,6 +51,7 @@ public class Mission
     protected Integer participantsMax;
     protected Boolean eventMission;
     protected Boolean available;
+    protected String releaseDate;
 
     /**
      * Recupera il valore della proprietà missionId.
@@ -192,6 +195,30 @@ public class Mission
      */
     public void setAvailable(Boolean value) {
         this.available = value;
+    }
+
+    /**
+     * Recupera il valore della proprietà releaseDate.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    /**
+     * Imposta il valore della proprietà releaseDate.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setReleaseDate(String value) {
+        this.releaseDate = value;
     }
 
 }
